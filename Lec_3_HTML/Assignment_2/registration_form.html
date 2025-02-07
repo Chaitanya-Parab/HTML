@@ -1,0 +1,102 @@
+<!--
+  Instructions
+Create an HTML file named registration_form.html that includes the following elements:
+
+Form Structure:
+
+A <form> element to contain the entire registration form.
+Input Fields:
+
+A text input for the user's full name.
+A text input for you nick name
+A password input for the user's password with a minimum length.
+An email input for the user's email address.
+A number input for the user's age with minimum 18 and maximum 60 values.
+A submit button to submit the form.
+Labels:
+
+Each input field should have an associated <label> with the for attribute correctly set to the corresponding input's id.
+Clicking on the label should focus the corresponding input field.
+Validation:
+
+The full name input should be readonly.
+The password input should have a minlength attribute set to 8.
+The age input should have min age and max attributes set.
+Example Content Details:
+Full Name: Readonly field (e.g., "John Doe")
+Nick Name : Sacheev Ji
+Password: Minimum length of 8 characters
+Email: Valid email format
+Age: Minimum 18, Maximum 99
+Submit Button: Labeled as "Register"
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+       <h1 style="border: 6px solid red">Registration Form</h1>
+       <form action="">
+
+        <!--Full name-->
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" value="John Deo" readonly>
+        <br>
+        <br>
+
+        <!--Nick Name-->
+        <label for="nick-name">Nick Name:</label>
+        <input type="text" id="nick-name">
+        <br>
+        <br>
+
+        <!--Password-->
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="8">
+        <br>
+        <br>
+
+        <!--Email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="riya@gmail.com">
+        <br>
+        <br>
+
+
+        <!--Age-->
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="18" max="60">
+        <br>
+        <br>
+
+        
+        <!--submit-->
+
+        <button type="submit">Register</button>
+
+
+
+
+
+
+
+
+
+
+
+       </form>
+
+
+
+
+
+</body>
+</html>
